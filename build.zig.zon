@@ -1,0 +1,17 @@
+.{
+    .name = .dinit,
+    .version = "0.23.0",
+    .dependencies = .{
+        .upstream = .{
+            .url = "git+https://github.com/davmac314/dinit.git#fe7ace7df6ea9e237953b53170ac1a38a27e304b",
+            .hash = "N-V-__8AAPcDHQC2cKzGxWmItJMma7QbImyZmdC23jCMnDzM",
+        },
+    },
+    .minimum_zig_version = "0.17.1",
+    .paths = .{
+        "include",
+        "build.zig",
+        "build.zig.zon",
+    },
+    .fingerprint = 0x4da01df84f67c28e,
+}

@@ -1,0 +1,23 @@
+#ifndef DINIT_MCONFIG_H
+#define DINIT_MCONFIG_H 1
+
+// Defines
+
+#define USE_INITGROUPS @USE_INITGROUPS@
+#define SUPPORT_CGROUPS @SUPPORT_CGROUPS@
+#define SUPPORT_CAPABILITIES @SUPPORT_CAPABILITIES@
+#define SUPPORT_IOPRIO @SUPPORT_IOPRIO@
+#define SUPPORT_OOM_ADJ @SUPPORT_OOM_ADJ@
+#define DEFAULT_AUTO_RESTART @DEFAULT_AUTO_RESTART@
+
+// Constants
+
+constexpr static char DINIT_VERSION[] = "@DINIT_VERSION@";
+constexpr static char SYSCONTROLSOCKET[] = "@SYSCONTROLSOCKET@";
+constexpr static char BINDIR[] = "@BINDIR@";
+constexpr static char SBINDIR[] = "@SBINDIR@";
+constexpr static char SHUTDOWN_PREFIX[] = "@SHUTDOWN_PREFIX@";
+constexpr static unsigned DEFAULT_START_TIMEOUT = @DEFAULT_START_TIMEOUT@;
+constexpr static unsigned DEFAULT_STOP_TIMEOUT = @DEFAULT_STOP_TIMEOUT@;
+
+#endif // DINIT_MCONFIG_H
